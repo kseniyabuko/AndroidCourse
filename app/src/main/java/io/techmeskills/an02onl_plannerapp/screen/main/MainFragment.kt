@@ -20,7 +20,7 @@ class MainFragment : NavigationFragment<FragmentMainBinding>(R.layout.fragment_m
             viewBinding.tvCount.text = field.toString()
         }
 
-    // adding var count2 for second button
+    // adding var count2 for 2nd button
 
     var count2: Int = 0
         set(value) {
@@ -46,11 +46,13 @@ class MainFragment : NavigationFragment<FragmentMainBinding>(R.layout.fragment_m
             count++
         }
 
-        // adding for 2nd button
+        // adding OnClickListener for 2nd button
 
         viewBinding.btnClicker2.setOnClickListener {
             count2++
         }
+
+        // adding OnClickListener for 3rd button
 
         viewBinding.btnSum.setOnClickListener {
             sum = count + count2
